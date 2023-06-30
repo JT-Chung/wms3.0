@@ -1,0 +1,49 @@
+[
+  {
+    "path": "/system/",
+    "name": "system",
+    "redirect": "/system/dict",
+    "meta": {
+      "title": "menu.system",
+      "icon": "DashboardOutlined"
+    },
+    "children": [
+      {
+        "path": "dict",
+        "name": "dict",
+        "component": "Dict",
+        "meta": {
+          "title": "menu.system.dictionary",
+          "permission": ["dict"]
+        }
+      },
+      {
+        "path": "role",
+        "name": "role",
+        "component": "Role",
+        "meta": {
+          "title": "menu.system.role",
+          "permission": ["role"]
+        }
+      },
+      {
+        "path": "user",
+        "name": "user",
+        "component": "User",
+        "meta": {
+          "title": "menu.system.user",
+          "permission": ["user"]
+        }
+      },
+      {
+        "path": "dept",
+        "name": "dept",
+        "component": "Dept",
+        "meta": {
+          "title": "menu.system.department",
+          "permission": ["dept"]
+        }
+      }
+    ]
+  }
+]
